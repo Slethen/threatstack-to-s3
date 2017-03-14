@@ -129,7 +129,7 @@ aws s3 ls --recursive s3://<bucket>
 ```
 
 ## API
-### POST https://_host_/api/v1/s3/alert
+### POST https://[host]/threatstack-to-s3/api/v1/s3/alert
 Post a JSON doc from Threat Stack and archive it to S3.  JSON doc will be in the following format.  __NOTE__: A webhook may contain multiple alerts but this service will store each one individually.
 ```
 {
